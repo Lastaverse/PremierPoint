@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Premier Point Partnership</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="Premier Point Partnership Logo"></a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home & About</a></li>
+                    <li><a href="services.html">Services & Testimonials</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                <div class="mobile-menu" aria-label="Open menu" role="button">
+                    <i class="fas fa-bars fa-lg"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Nav -->
+    <div class="nav-overlay"></div>
+    <nav class="mobile-nav">
+        <button class="mobile-nav-close" aria-label="Close menu"><i class="fas fa-times"></i></button>
+        <a href="index.html">Home & About</a>
+        <a href="services.html">Services & Testimonials</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
+
+    <!-- Spacer -->
+    <div style="height: 93px;"></div>
+
+    <!-- Contact -->
+    <section id="contact" class="fade-section">
+        <div class="container">
+            <div style="text-align:center">
+                <span class="section-tag">Get in Touch</span>
+            </div>
+            <h2 class="section-title">Contact Us</h2>
+            <p class="section-subtitle">We'd love to hear from you. Reach out for a free consultation or any enquiry.</p>
+
+            <div class="contact-content">
+
+                <!-- Info -->
+                <div class="contact-info">
+                    <h3>Our Details</h3>
+
+                    <div class="contact-detail">
+                        <div class="contact-detail-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-detail-text">
+                            <strong>Address</strong>
+                            Unit 11, East Lodge Village, East Lodge Lane, Enfield, England, EN2 8AS
+                        </div>
+                    </div>
+
+                    <div class="contact-detail">
+                        <div class="contact-detail-icon"><i class="fas fa-phone"></i></div>
+                        <div class="contact-detail-text">
+                            <strong>Phone</strong>
+                            <a href="tel:02012345678" style="color:inherit;">020 1234 5678</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail">
+                        <div class="contact-detail-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-detail-text">
+                            <strong>Email</strong>
+                            <a href="mailto:info@premierpointpartnership.co.uk" style="color:inherit;">info@premierpointpartnership.co.uk</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail">
+                        <div class="contact-detail-icon"><i class="fas fa-clock"></i></div>
+                        <div class="contact-detail-text">
+                            <strong>Office Hours</strong>
+                            Mon–Fri: 9:00am – 5:30pm
+                        </div>
+                    </div>
+
+                    <div class="map-wrapper">
+                        <iframe
+                            src="https://maps.google.com/maps?q=Unit%2011%2C%20East%20Lodge%20Village%2C%20East%20Lodge%20Lane%2C%20Enfield%2C%20EN2%208AS&t=m&z=16&output=embed&iwloc=near"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Office location map">
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <div class="contact-form fade-in">
+                    <h3>Send a Message</h3>
+                    <form id="contactForm" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" placeholder="John Smith" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" placeholder="john@example.com" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" placeholder="020 0000 0000">
+                            </div>
+                            <div class="form-group">
+                                <label for="service">Interested Service</label>
+                                <select id="service" required>
+                                    <option value="">Select a service…</option>
+                                    <option>Company Formations</option>
+                                    <option>Tax Preparation & Planning</option>
+                                    <option>VAT Returns</option>
+                                    <option>CIS Returns</option>
+                                    <option>Payroll Management</option>
+                                    <option>Bookkeeping & Financial Reporting</option>
+                                    <option>Xero Software</option>
+                                    <option>Business Consulting</option>
+                                    <option>Tailored Financial Solutions</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" rows="5" placeholder="Tell us about your needs…" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                        <p class="form-success" id="successMsg">
+                            <i class="fas fa-check-circle"></i> Thank you! We'll get back to you within one business day.
+                        </p>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-logo">
+                    <a href="index.html"><img src="images/logo.png" alt="Premier Point Partnership"></a>
+                </div>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter / X"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p><a href="#">Privacy Policy</a> &nbsp;|&nbsp; &copy; 2025 Premier Point Partnership. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
